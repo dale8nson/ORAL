@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 export default function SideMenuItem({ children, href, className }: { children: ReactNode, href: string, className: string }) {
   return (
     <NavigationMenuItem className={cn([className])}>
-      <Link href={href} className='justify-start items-start'>
+      <Link href={href} className='justify-start items-start hover:text-white'>
         {children}
       </Link>
     </NavigationMenuItem>
