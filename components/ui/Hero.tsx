@@ -21,20 +21,20 @@ export default function Hero() {
   const [emblaRef, emblaApi] = useEmblaCarousel()
   // const [scope, animate] = useAnimate()
 
-  const anim = animate(progress, 1, {duration:1.725, repeatType:'mirror', repeat:Infinity} )
+  // const anim = animate(progress, 1, {duration:1.725, repeatType:'mirror', repeat:Infinity} )
 
-  const playAnim = useCallback((emblaApi: any) => {
-    anim.play()
-  }, [])
+  // const playAnim = useCallback((emblaApi: any) => {
+  //   anim.play()
+  // }, [])
 
-  useEffect(() => {
-    anim.play()
-    if (emblaApi) {
+  // useEffect(() => {
+  //   anim.play()
+    // if (emblaApi) {
       
 
       // emblaApi.on('slidesInView', () => playAnim(emblaApi))
-    }
-  }, [])
+    // }
+  // }, [])
 
   return (
     <div className=" bg-blue-200/100 bg-fixed absolute  contrast-[4] saturate-100 h-[100%] min-w-full z-0 overflow-x-hidden ">

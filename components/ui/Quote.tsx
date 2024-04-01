@@ -3,15 +3,15 @@ import { motion, MotionValue, useMotionValue, animate } from 'framer-motion'
 import { useStore } from '@/lib/store'
 const Quote = forwardRef(function Quote({ children }: { progress: MotionValue, children: ReactNode }, ref) {
 
-  const progress = useMotionValue(0)
+  // const progress = useMotionValue(0)
 
-  const anim = animate(progress, 1, {duration:3.5, repeatType:'mirror', repeat:Infinity} )
+  // const anim = animate(progress, 1, {duration:3.5, repeatType:'mirror', repeat:Infinity} )
 
-  anim.play()
+  
 
-  useEffect(() => {
-    
-  })
+  // useEffect(() => {
+  //   anim.play()
+  // })
 
   const sideMenuOpen = useStore((state: any) => state.sideMenuOpen)
   return (
